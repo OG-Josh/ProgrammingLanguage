@@ -1,0 +1,16 @@
+// Paste this into ghci
+/*
+:load Interpreter.hs
+ */
+//then
+/*
+a=3
+b=3
+c=4
+d=6
+
+if a == b then d else c
+if a == c then d else b
+*/
+//the first ifthenelse statement should return 6
+//the second ifthenelse statemnet should return 3
