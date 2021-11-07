@@ -1,0 +1,21 @@
+// stack exec LambdaNat-exe test/solutions.lc
+//
+// let rec member = \ elem. \list. if elem # list then 0 else S 
+// in
+// member 1 2:3:1:#
+//
+// let rec remove = \elem. \list. if elem # list then ... else (minus_one elem)
+// in
+// remove 2 1:2:3:1:2:3:#
+//
+// let rec sum = \elem. \list. ...
+// in
+// sum 1:2:3:4:#
+//
+// let rec prod = \elem. \list. ...
+// in
+// prod 1:2:3:4:#
+//
+// let plus_two = \x. (x + S S 0)
+// in
+// plus_two S 0
