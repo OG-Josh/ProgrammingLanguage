@@ -1,21 +1,46 @@
-// stack exec LambdaNat-exe test/solutions.lc
+// let rec f = \n. if n = 0 then 0 else f(n-1)
+// in
+// f 10
+// ;;
 //
-// let rec member = \ elem. \list. if elem # list then 0 else S 
+// let rec fact = \n. if n = 0 then 1 else n * fact(n-1)
+// in
+// fact 4
+// ;;
+//
+// let rec fib = \n. if n = 0 then 0 else if n = 1 then 1 else fib(n-2) + fib (n-1)
+// in
+// fib 10
+// ;;
+//
+// let rec member = \ elem. \list. if list = # then 0 else if hd list = elem then 1 else member elem (tl list)
 // in
 // member 1 2:3:1:#
+// ;;
 //
-// let rec remove = \elem. \list. if elem # list then ... else (minus_one elem)
+// let rec remove = \elem. \list. if list = # then # else if hd list = elem then (tl list) else (hd list) : (remove elem (tl list))
 // in
 // remove 2 1:2:3:1:2:3:#
+// ;;
 //
-// let rec sum = \elem. \list. ...
-// in
-// sum 1:2:3:4:#
-//
-// let rec prod = \elem. \list. ...
+// let rec prod = \list. if list = # then 1 else (hd list) * prod(tl list)
 // in
 // prod 1:2:3:4:#
+// ;;
 //
-// let plus_two = \x. (x + S S 0)
+// let plus_two = \elem. 
+// elem + 2
+//
 // in
-// plus_two S 0
+//
+// let rec map \func. \list. if list = # then # else (hd list) * prod(tl list)
+//
+// in
+// map plus_two 1:2:3:4:#
+// ;;
+//
+// let rec insert = \elem. \list. if list = # then (elem: #) else if (elem) less_equal (hd list) = 1 then (elem : list) else (hd list) : (insert elem (tl list))
+// in
+// let rec sort = \list. if list = # then # else insert (hd list) (sort (tl list))
+// in
+// sort 1:#
