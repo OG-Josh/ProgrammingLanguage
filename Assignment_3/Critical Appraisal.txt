@@ -1,0 +1,13 @@
+Date of Submission 11/10/2021
+
+What we learned...
+Both my collaborator and I (Jesse Ruhl and Joshua Yang) built a simple programming language off of lambda calculus with limited functions. To be able to establish and extend current functionalities of lambda calculus with a strong understanding of string rewriting
+is quite difficult. We ran into a lot of issues with formatting and parenthesis in out .lc file as well as some problems with definitions regarding ELE. In general, we noticed some stuff that was interesting such as a +2 function not running in Haskell vs running in
+Lambda. Otherwise, the whole assignment was interesting to say and had some ups and downs regarding Lambda Calculus topic. 
+
+Things to note...
+Josh
+Using lambda language was quite interesting but quite difference when needing to use this especially when we defined our lambda language. We had x = e1 in e2 be translated to something else in lambda as the same logic with a different way to define it.
+
+Jesse
+Theoretically the concept of lambda calculus works and makes sense, but I am not familiar enough with the syntax at this point for it to feel comfortable to code with it or to be confident in the substitutions with complex rules in a professional field.
